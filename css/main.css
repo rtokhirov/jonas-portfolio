@@ -642,6 +642,7 @@ body {
   margin-bottom: 1.1rem;
 }
 .post__card .vertical_line {
+  margin-top: 1rem;
   height: 2.1rem;
   width: 1px;
   background-color: rgb(0, 0, 0);
