@@ -1,0 +1,184 @@
+body {
+    background-color: #fff;
+}
+
+.hero {
+    .container {
+        padding-top: 14rem;
+        padding-bottom: 7rem;
+        display: flex;
+        justify-content: space-between;
+    }
+    &__info--wrapper {
+        h1 {
+            width: 100%;
+            margin-bottom: 4rem;
+        }
+        p {
+            margin-bottom: 3.8rem;
+            width: 100%;
+            max-width: 49.7rem;
+        }
+    }
+    &__img-div {
+        width: 24.3rem;
+        height: 24.3rem;
+        position: relative;
+        .jonas_bg {
+            top: 15px;
+            right: 5px;
+            position: absolute;
+            z-index: -1;
+        }
+    }
+    @include responsive (m-tablet) {
+        .container {
+            padding-top: 3.3rem;
+            padding-bottom: 5.8rem;
+            flex-direction: column-reverse;
+            justify-content: center;
+            align-items: center;
+        }
+        .hero__btn {
+            margin-right: auto;
+            margin-left: auto;
+        }
+        p {
+            text-align: center;
+        }
+    }
+}
+
+.post {
+    background-color: $color-bg-section;
+    padding-top: 1rem;
+    padding-bottom: 3.2rem;
+    &__top-div {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        a:hover {
+            color: blue;
+        }
+        a:active {
+            color: blue;
+            opacity: 0.6;
+        }
+    }
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+    }
+    &__card {
+        padding: 24px 25px 7px 23px;
+        background-color: #fff;
+        box-shadow: 0px 4px 10px rgba(187, 225, 250, 0.25);
+        border-radius: 4px;
+        h2 {
+            margin-bottom: 1.7rem;
+        }
+        div {
+            display: flex;
+            align-items: center;
+            gap: 2.5rem;
+            margin-bottom: 1.1rem;
+        }
+        .vertical_line {
+            height: 2.1rem;
+            width: 1px;
+            background-color: rgba(0, 0, 0, 1);
+        }
+        p {
+            font-size: 1.8rem;
+            padding-bottom: 2rem;
+        }
+    }
+    @include responsive (b-tablet) {
+        &__top-div {
+            h3 {
+                margin-right: auto;
+                margin-left: auto;
+            }
+        }
+        &__bottom {
+            flex-direction: column;
+        }
+        &__top_link {
+            display: none;
+        }
+        &__card {
+            padding: 12px 20px 7px 12px;
+            h2 {
+                margin-bottom: 1.2rem;
+                font-size: 2.2rem;
+                line-height: 3rem;
+            }
+            div {
+                .vertical_line {
+                    height: 1.6rem;
+                }
+                gap: 1.5rem;
+            }
+            p {
+                font-size: 1.6rem;
+                padding-bottom: 2rem;
+            }
+        }
+    }
+}
+
+.works {
+    padding-top: 1.5rem;
+    padding-bottom: 8.3rem;
+    &__card {
+        border-bottom: 1px solid rgba(224, 224, 224, 1);
+        padding-top: 3rem;
+        padding-bottom: 1.5rem;
+        display: flex;
+        gap: 1.8rem;
+    }
+    &__card-info {
+        h2 {
+            margin-bottom: 1.5rem;
+        }
+        div {
+            display: flex;
+            gap: 26px;
+            margin-bottom: 1.5rem;
+            span {
+                padding-left: 1rem;
+                padding-right: 1rem;
+                border-radius: 16px;
+                justify-content: center;
+                font-weight: 900;
+                font-size: 1.8rem;
+                // line-height: 6rem;
+                color: #FFFFFF;
+                background-color: $color-time-1;
+            }
+            p {
+                font-size: 2rem;
+                line-height: 1.5;
+                color: #8695A4;
+            }
+        }
+    }
+    @include responsive (m-tablet) {
+        padding-bottom: 15rem;
+        h3 {
+            margin-right: auto;
+            margin-left: auto;
+            text-align: center;
+        }
+        &__card {
+            flex-direction: column;
+        }
+        .hiddener {
+            display: none;
+        }
+        hr:not(:first-child) {
+            display: none;
+        }
+    }
+}

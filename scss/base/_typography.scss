@@ -1,0 +1,58 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: $heebo;
+    font-size: 1.6rem;
+    color: $color-dark;
+    font-weight: 400;
+    line-height: 1.5;
+}
+
+h1 {
+    font-size: 4.4rem;
+    @include responsive(m-tablet) {
+        font-size: 3.6rem;
+        text-align: center;
+    }
+    @include responsive(phone) {
+        font-size: 3.2rem;
+    }
+    line-height: 1.36;
+    font-weight: 700;
+    color: $color-dark;
+}
+
+h2 {
+    font-size: 2.6rem;
+    @include responsive (phone) {
+        font-size: 2.2rem;
+    }
+    line-height: 1.5;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 2.2rem;
+    line-height: 6rem;
+    font-weight: 400;
+}
+
+a {
+    font-size: 2rem;
+    line-height: 1.5;
+    font-weight: 500;
+    color: $color-dark;
+}
+
+p {
+    line-height: 2.4rem;
+    color: $color-dark;
+}
+
+.post__top_link {
+    line-height: 24px;
+    text-align: right;
+    color: $color-secondary;
+}

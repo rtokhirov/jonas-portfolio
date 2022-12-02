@@ -1,0 +1,22 @@
+.btn {
+    display: flex;
+    // align-items: center;
+    // justify-content: center;
+    padding-top: 0.9rem;
+    padding-left: 2rem;
+    width: 20.8rem;
+    height: 4.7rem;
+    border: 0;
+    border-radius: 2px;
+    cursor: pointer;
+    color: $color-bg;
+    background-color: $color-primary;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+.btn:active {
+    opacity: 0.5;
+}

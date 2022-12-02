@@ -1,0 +1,68 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    height: 100%;
+    scroll-behavior: smooth;
+}
+
+ul {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-color: $color-bg;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.container {
+    width: 100%;
+    max-width: $container;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include responsive (tablet) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    @include responsive (phone) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
+.container_header {
+    width: 100%;
+    max-width: $container_header;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: 2rem;
+    padding-left: 2rem;
+    @include responsive (tablet) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    @include responsive (phone) {
+        padding-right: 1rem;
+        padding-left: 1rem;
+    }
+}
+
+.main {
+    flex-grow: 1;
+}
+
+input {
+    outline: none;
+    background-color: transparent
+}
