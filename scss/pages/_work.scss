@@ -1,0 +1,42 @@
+.works {
+    h1 {
+        font-size: 4.4rem;
+        margin-top: 3rem;
+        margin-bottom: 5.5rem;
+        text-align: left;
+        @include responsive(tablet) {
+            font-size: 3.8rem;
+            line-height: 2;
+            margin-top: 2rem;
+            margin-bottom: 1.5rem;
+        }
+        @include responsive(phone) {
+            font-size: 3rem;
+            line-height: 2;
+            margin-top: 0;
+            margin-bottom: 0rem;
+        }
+    }
+    p {
+        font-size: 1.5rem;
+    }
+    .dishiddener {
+        display: none;
+        @include responsive (m-tablet) {
+            display: flex;
+        }
+    }
+    .hiddener {
+        // display: block;
+        @include responsive (m-tablet) {
+            display: none;
+        }
+    }
+}
+
+.work_padding {
+    padding-bottom: 0;
+    @include responsive (m-tablet) {
+        padding-bottom: 0;
+    }
+}

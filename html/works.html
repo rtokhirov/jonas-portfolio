@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>John Portfolio</title>
-    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="../css/main.css" />
 </head>
 
 <body>
@@ -14,22 +14,22 @@
     <header class="header">
         <div class="container_header">
             <button class="header__toggle--btn">
-                <img src="./images/svg/toggle_btn.svg" alt="toggle butoon ">
+                <img src="../images/svg/toggle_btn.svg" alt="toggle butoon ">
             </button>
 
             <nav class="hidden">
                 <ul class="nav__list">
                     <li class="nav__item">
-                        <a href="index.html" class="nav__link">Home</a>
+                        <a href="../index.html" class="nav__link">Home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="./html/works.html" class="nav__link">Works</a>
+                        <a href="works.html" class="nav__link">Works</a>
                     </li>
                     <li class="nav__item">
-                        <a href="./html/blog.html" class="nav__link">Blog</a>
+                        <a href="blog.html" class="nav__link">Blog</a>
                     </li>
                     <li class="nav__item">
-                        <a href="./html/contact.html" class="nav__link">Contact</a>
+                        <a href="contact.html" class="nav__link">Contact</a>
                     </li>
                 </ul>
             </nav>
@@ -37,65 +37,13 @@
     </header>
     <!-- MAIN -->
     <main class="main">
-        <section class="hero">
-            <div class="container">
-                <div class="hero__info--wrapper">
-                    <h1>
-                        Hi, I am John, <br> Creative Technologist
-                    </h1>
-                    <p>
-                        Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.
-                    </p>
-                    <a class="hero__btn btn" href="">
-                        Download Resume
-                    </a>
-                </div>
-                <div class="hero__img-div">
-                    <img width="247px" height="247px" src="./images/png/jonas.png" alt="jonas image" srcset="./images/png/jonas.png 1x, ./images/png/jonas@2x.png 2x">
-                    <img class="jonas_bg" src="./images/png/jonas_bg.png" alt="" srcset="./images/png/jonas_bg.png 1x, ./images/png/jonas_bg@2x.png 2x">
-                </div>
-            </div>
-        </section>
-        <section class="post">
-            <div class="container">
-                <div class="post__top-div">
-                    <h3>Recent posts</h3>
-                    <a class="post__top_link" href="">View all</a>
-                </div>
-                <div class="post__bottom">
-                    <div class="post__card">
-                        <h2>Making a design system from scratch</h2>
-                        <div>
-                            <a href="data">
-                                12 Feb 2020 
-                            </a>
-                            <div class="vertical_line"></div>
-                            <h4>Design, Pattern</h4>
-                        </div>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    </div>
-                    <div class="post__card">
-                        <h2>Creating pixel perfect icons in Figma</h2>
-                        <div>
-                            <a href="data">
-                                12 Feb 2020 
-                            </a>
-                            <div class="vertical_line"></div>
-                            <h4>Figma, Icon Design</h4>
-                        </div>
-                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
-                    </div>
-                </div>
-            </div>
-
-        </section>
-        <section class="works work_padding">
-            <div class="container">
-                <h3>Featured works</h3>
+        <section class="works">
+            <div class="container_mini">
+                <h1>Work</h1>
                 <div class="works__card">
-                    <img src="./images/png/admin_dashboard.png" alt="admin panel illustration" srcset="./images/png/admin_dashboard.png 1x, ./images/png/admin_dashboard@2x.png 2x">
+                    <img src="../images/png/admin_dashboard.png" alt="admin panel illustration" srcset="../images/png/admin_dashboard.png 1x, ../images/png/admin_dashboard@2x.png 2x">
                     <div class="works__card-info">
-                        <a href="./html/work_detail.html">
+                        <a href="./work_detail.html">
                             <h2>Designing Dashboards</h2>
                         </a>
                         <div>
@@ -107,9 +55,9 @@
                 </div>
 
                 <div class="works__card hiddener">
-                    <img src="./images/png/portrait.png" alt="admin panel illustration" srcset="./images/png/portrait.png 1x, ../images/png/portrait@2x.png 2x">
+                    <img src="../images/png/portrait.png" alt="admin panel illustration" srcset="../images/png/portrait.png 1x, ../images/png/portrait@2x.png 2x">
                     <div class="works__card-info">
-                        <a href="./html/work_detail.html">
+                        <a href="./work_detail.html">
                             <h2>Vibrant Portraits of 2020</h2>
                         </a>
                         <div>
@@ -121,9 +69,37 @@
                 </div>
 
                 <div class="works__card hiddener">
-                    <img src="./images/png/pattern.png" alt="admin panel illustration" srcset="./images/png/pattern.png 1x, ./images/png/pattern@2x.png 2x">
+                    <img src="../images/png/pattern.png" alt="admin panel illustration" srcset="./images/png/pattern.png 1x, ../images/png/pattern@2x.png 2x">
                     <div class="works__card-info">
-                        <a href="./html/work_detail.html">
+                        <a href="./work_detail.html">
+                            <h2>36 Days of Malayalam type</h2>
+                        </a>
+                        <div>
+                            <span>2018</span>
+                            <p>Typhography</p>
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+
+                <div class="works__card hiddener">
+                    <img src="../images/png/companents.png" alt="description of statistic dates" srcset="../images/png/companents.png 1x, ../images/png/companents@2x.png 2x">
+                    <div class="works__card-info">
+                        <a href="./work_detail.html">
+                            <h2>36 Days of Malayalam type</h2>
+                        </a>
+                        <div>
+                            <span>2018</span>
+                            <p>Typhography</p>
+                        </div>
+                        <p>Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit. Exercitation veniam consequat sunt nostrud amet.</p>
+                    </div>
+                </div>
+
+                <div class="works__card dishiddener">
+                    <img src="../images/png/landing_pages.png" alt="admin panel illustration" srcset="../images/png/landing_pages.png 1x, ../images/png/landing_pages@15x.png 2x">
+                    <div class="works__card-info">
+                        <a href="./work_detail.html">
                             <h2>36 Days of Malayalam type</h2>
                         </a>
                         <div>
@@ -169,7 +145,8 @@
         </div>
     </footer>
     <!-- JavaScript -->
-    <script src="./js/scripts.js" defer></script>
+    <script src="../js/scripts.js" defer></script>
+
 </body>
 
 </html>

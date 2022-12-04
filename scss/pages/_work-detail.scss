@@ -1,0 +1,61 @@
+.work__details {
+    h1 {
+        text-align: left;
+        font-size: 3.4rem;
+        line-height: 5rem;
+        margin-bottom: 32px;
+        @include responsive (m-tablet) {
+            font-size: 3rem;
+            line-height: 4rem;
+        }
+    }
+    div {
+        display: flex;
+        align-items: flex-start;
+        justify-content: start;
+        margin-bottom: 2.3rem;
+        span {
+            background-color: $color-primary;
+            border-radius: 1.6rem;
+            padding: 1px 10px;
+            color: $color-bg;
+            margin-right: 17px;
+        }
+        p {
+            color: $color-dark;
+            font-size: 2rem;
+            line-height: 1.5;
+            margin-bottom: 0;
+            @include responsive (m-tablet) {
+                font-size: 1.8rem;
+            }
+        }
+    }
+    p {
+        font-size: 1.6rem;
+        line-height: 1.5;
+        margin-bottom: 35px;
+    }
+    img {
+        margin-bottom: 35px;
+    }
+    h2 {
+        font-weight: 500;
+        font-size: 3rem;
+        line-height: 2;
+        color: $color-dark;
+        @include responsive (m-tablet) {
+            font-size: 2.6rem;
+        }
+    }
+    h3 {
+        font-weight: 500;
+        font-size: 2.4rem;
+        line-height: 6rem;
+        color: $color-dark;
+        margin-bottom: 30px;
+        @include responsive (m-tablet) {
+            font-size: 2rem;
+        }
+    }
+}

@@ -41,6 +41,23 @@ body {
     }
 }
 
+.container_mini {
+    width: 100%;
+    max-width: $container_mini;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    @include responsive (tablet) {
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+    @include responsive (phone) {
+        padding-left: 1rem;
+        padding-right: 1rem;
+    }
+}
+
 .container_header {
     width: 100%;
     max-width: $container_header;
@@ -65,4 +82,11 @@ body {
 input {
     outline: none;
     background-color: transparent
+}
+
+.vertical_line {
+    margin-top: 1rem;
+    height: 2.1rem;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 1);
 }
